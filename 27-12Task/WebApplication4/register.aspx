@@ -59,7 +59,7 @@
              
 
                   <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                      <asp:Button ID="Button1" runat="server" Text="Register" class="btn btn-primary btn-lg" ValidationGroup="register"/>
+                      <asp:Button ID="Button1" runat="server" Text="Register" class="btn btn-primary btn-lg" ValidationGroup="register" OnClick="Button1_Click"/>
                   &nbsp;&nbsp;
                   </div>
 
@@ -79,7 +79,7 @@
     </div>
   </div>
 </section>
-      <div class="vh-100 d-flex justify-content-center align-items-center">
+   <%--   <div class="vh-100 d-flex justify-content-center align-items-center">
             <div class="col-md-4 p-5 shadow-sm border rounded-3">
                 <h2 class="text-center mb-4 text-primary">Login Form</h2>
                
@@ -99,7 +99,7 @@
                     <p>
                     </p>
                     <div class="d-grid">
-                        <asp:Button ID="Button2"  class="btn btn-primary"  runat="server" Text="Login" ValidationGroup="login" />
+                        <asp:Button ID="Button2"  class="btn btn-primary"  runat="server" Text="Login" ValidationGroup="login" OnClick="Button2_Click" />
                     </div>
                
                 <div class="mt-3">
@@ -108,5 +108,5 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </div>--%>
 </asp:Content>

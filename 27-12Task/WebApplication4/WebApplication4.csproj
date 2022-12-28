@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ajax.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -94,8 +95,16 @@
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="taskday.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ajax.aspx.cs">
+      <DependentUpon>Ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax.aspx.designer.cs">
+      <DependentUpon>Ajax.aspx</DependentUpon>
+    </Compile>
     <Compile Include="mymaster.Master.cs">
       <DependentUpon>mymaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -131,6 +140,13 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="taskday.aspx.cs">
+      <DependentUpon>taskday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="taskday.aspx.designer.cs">
+      <DependentUpon>taskday.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

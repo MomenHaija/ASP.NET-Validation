@@ -13,5 +13,16 @@ namespace WebApplication4
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            if (this.IsValid)
+            {
+                ClientScript.RegisterClientScriptBlock(this.GetType(),
+                    "alert", "swal('Good job!', 'You clicked Success button!', 'success')", true);
+            }
+
+        }
     }
 }

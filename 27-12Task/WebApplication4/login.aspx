@@ -18,11 +18,13 @@
                         </label>
                         &nbsp;<asp:TextBox class="form-control border border-primary" ID="exampleInputPassword1" runat="server" TextMode="Password" ValidationGroup="login"></asp:TextBox>
                     </div>
-                    <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" ValidationGroup="login" />
+                    <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" ValidationGroup="login" ShowValidationErrors="False" />
                     <p>
                     </p>
                     <div class="d-grid">
-                        <asp:Button ID="Button1"  class="btn btn-primary"  runat="server" Text="Login" ValidationGroup="login" />
+                        <asp:Button ID="Button1"  class="btn btn-primary"  runat="server" Text="Login" ValidationGroup="login" OnClick="Button1_Click" />
+                    &nbsp;
+                        <asp:Button ID="Button2"  class="btn btn-primary"  runat="server" Text="Login" ValidationGroup="login" OnClick="Button1_Click" />
                     </div>
                 </form>
                 <div class="mt-3">
